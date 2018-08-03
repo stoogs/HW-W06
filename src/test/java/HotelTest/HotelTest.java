@@ -14,6 +14,7 @@ public class HotelTest {
     @Before
     public void before() {
         guest = new Guest("Basil", 500.00);
+        hotel = new Hotel("Clanty Towers");
     }
 
     @Test
@@ -26,4 +27,8 @@ public class HotelTest {
         assertEquals(500.00, guest.getMoney(), 0);
     }
 
+    @Test
+    public void testHotelName() {
+        assertEquals("Clanty Towers", hotel.getName());
+    }
 }
