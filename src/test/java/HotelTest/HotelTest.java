@@ -1,19 +1,22 @@
+package HotelTest;
+
 import Guest.Guest;
+import Hotel.Hotel;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class GuestTest {
+public class HotelTest {
+    Hotel hotel;
     Guest guest;
 
     @Before
     public void before() {
         guest = new Guest("Basil", 500.00);
-    }//before
+    }
 
     @Test
-
     public void guestHasName() {
         assertEquals("Basil", guest.getName());
     }
@@ -23,4 +26,4 @@ public class GuestTest {
         assertEquals(500.00, guest.getMoney(), 0);
     }
 
-} // class end
+}
