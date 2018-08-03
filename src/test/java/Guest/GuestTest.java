@@ -1,6 +1,5 @@
 package Guest;
 
-import Guest.Guest;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -23,5 +22,15 @@ public class GuestTest {
     public void guestHasMoney() {
         assertEquals(500.00, guest.getMoney(), 0);
     }
+    @Test
+    public void guestChangeName() {
+        guest.setName("Cybil");
+        assertEquals("Cybil", guest.getName());
+    }
+    @Test
 
+    public void guestChangeMoney() {
+        guest.setMoney(0.00);
+        assertEquals(0.00,guest.getMoney(),0);
+    }
 } // class end

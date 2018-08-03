@@ -6,8 +6,14 @@ import java.util.ArrayList;
 
 public abstract class Room {
     private int dailyRate;
-    private ArrayList<Guest> guests;
+     ArrayList<Guest> guests;
     private int capacity;
+
+    public Room(int dailyRate, ArrayList<Guest> guests, int capacity){
+        this.dailyRate = dailyRate;
+        this.guests = new ArrayList<Guest>(); //IMPORTANT
+        this.capacity = capacity;
+    }
 
     public int getCapacity() {
         return capacity;
@@ -24,5 +30,21 @@ public abstract class Room {
     public void setDailyRate(int dailyRate) {
         this.dailyRate = dailyRate;
     }
+
+    public ArrayList<Guest> getGuests() {
+        return guests;
+    }
+
+    public void setGuests(ArrayList<Guest> guests) {
+        this.guests = guests;
+    }
+
+//    public void addGuest(Guest guest){
+//        guests.add(guest);
+//    }
+
+
+// put guest in room
+
 
 }// class end
