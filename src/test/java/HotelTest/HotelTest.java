@@ -25,9 +25,9 @@ public class HotelTest {
         guest1 = new Guest("Basil", 100.00);
         guest2 = new Guest("Cybil", 1000.00);
         hotel = new Hotel("Clanty Towers");
-        diningRoom = new DiningRoom(100,guests, 10);
+        diningRoom = new DiningRoom();
         this.guests = new ArrayList<Guest>();
-        conferenceRoom = new ConferenceRoom(500,guests,50,"Conf Room");
+        conferenceRoom = new ConferenceRoom("Conf Room",guests);
 
         // TODO make guest array
         // TODO make room array

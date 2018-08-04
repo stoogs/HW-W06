@@ -20,13 +20,13 @@ public class DiningRoomTest {
     public void before() {
         guest = new Guest("Basil", 500.00);
         this.guests = new ArrayList<Guest>();
-        diningRoom = new DiningRoom(100, guests, 10);
+        diningRoom = new DiningRoom();
 
     }
 
     @Test
     public void roomRate() {
-        assertEquals(100,diningRoom.getDailyRate());
+        assertEquals(0,diningRoom.getDailyRate());
     }
 
     @Test  //Add to dining.Room guests array

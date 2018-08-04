@@ -16,7 +16,7 @@ public class ConferenceRoomTest {
     @Before
     public void before() {
         this.guests = new ArrayList<Guest>();
-        conferenceRoom = new ConferenceRoom(500,guests,50,"Conf Room");
+        conferenceRoom = new ConferenceRoom("Conf Room",guests);
     }
     
     @Test
