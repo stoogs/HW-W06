@@ -117,16 +117,12 @@ public class HotelTest {
         assertEquals(5, diningRoom.roomOccupied());
     }
 @Test
-    public void testRoomsForGuests() {
-    diningRoom.guestsInDiningRoom();
-    conferenceRoom.guestsInConferenceRoom();
-
-    //System.out.println(Arrays.toString(guests.toArray()));
+    public void testPrintConferenceRoomGuestNames() {
+    conferenceRoom.printConferenceRoomGuestNames();
     }
+
 }
-        //  String[] result;
-//  result =  diningRoom.getDiningRoomGuestList();
-//    System.out.println(result);
+
 
 
 

@@ -14,7 +14,7 @@ public class ConferenceRoom extends Room{
     public ConferenceRoom(String conferenceRoomTitle, ArrayList<Guest> guests) {
         super(500, 50);
         this.conferenceRoomTitle = conferenceRoomTitle;
-        this.conferenceRoomGuestsArray = new ArrayList<Guest>(); //IMPORTANT
+        conferenceRoomGuestsArray = new ArrayList<Guest>(); //IMPORTANT
     }
 
     public String getConferenceRoomTitle() {
@@ -42,6 +42,9 @@ public class ConferenceRoom extends Room{
         System.out.println("Conference Room Guests ");
         System.out.println(Arrays.toString(this.conferenceRoomGuestsArray.toArray()));
 
+    }
+    public void printConferenceRoomGuestNames(){
+       conferenceRoomGuestsArray.forEach((person)->System.out.println(person.getName()));
     }
 //    public ArrayList listGuestsInDiningRoom(){
 //        return conferenceRoomGuestsArray();
