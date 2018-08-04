@@ -8,7 +8,9 @@ import Room.DiningRoom;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -19,6 +21,7 @@ public class HotelTest {
     DiningRoom diningRoom;
     ConferenceRoom conferenceRoom;
     Bedroom bedRoomSingle, bedRoomDouble,bedRoomKing;
+    ArrayList<Guest> guestsInRoom;
 
     @Before
     public void before() {
@@ -26,13 +29,23 @@ public class HotelTest {
         guest2 = new Guest("Cybil", 1000.00);
         hotel = new Hotel("Clanty Towers");
         diningRoom = new DiningRoom();
+        diningRoom.addGuestToDiningRoom();
+        diningRoom.addGuestToDiningRoom();
         conferenceRoom = new ConferenceRoom("Conf Room",guests);
+        conferenceRoom.addGuestToConferenceRoom();
+        conferenceRoom.addGuestToConferenceRoom();
 
         // put single guest in room array
         // make guest array
         // put guest in room array
         // remove guest from room array
 
+    }
+
+    @Test
+    public void testChangeConferenceRoomTitle(){
+        conferenceRoom.changeConferenceRoomTitle("Flat Earthers");
+    assertEquals("Flat Earthers", conferenceRoom.getConferenceRoomTitle());
     }
 
     @Test
@@ -55,15 +68,70 @@ public class HotelTest {
         assertEquals("Fawlty Towers", hotel.getName());
     }
     @Test  //Add to DiningRoom guests array
-    public void addGuestsToDiningRoom() {
+    public void testAddGuestsToDiningRoom() {
         diningRoom.addGuestToDiningRoom();
-        assertEquals(1, diningRoom.roomOccupied());
+        assertEquals(3, diningRoom.roomOccupied());
     }
     @Test //Add to Dining Room guests array
     public void testRemoveGuestFromDiningRoom(){
-        diningRoom.addGuestToDiningRoom();
-        diningRoom.addGuestToDiningRoom();
         diningRoom.removeGuestFromDiningRoom();
         assertEquals(1, diningRoom.roomOccupied());
     }
+@Test
+    public void testListGuestsInDiningRoom(){
+        System.out.println(conferenceRoom.getConferenceRoomTitle());
+        assertEquals(1,1);
+    }
+
+    @Test
+    public void testRoomName() {
+        assertEquals("Conf Room", conferenceRoom.getConferenceRoomTitle());
+    }
+
+    @Test
+    public void changeRoomName() {
+        conferenceRoom.setConferenceRoomTitle("Expo Room");
+        assertEquals("Expo Room", conferenceRoom.getConferenceRoomTitle());
+    }
+    @Test
+    public void testRoomRate() {
+        conferenceRoom.getDailyRate();
+        assertEquals(500, conferenceRoom.getDailyRate());
+    }
+
+    @Test
+    public void testSetRoomRate() {
+        conferenceRoom.setDailyRate(550);
+        assertEquals(550, conferenceRoom.getDailyRate());
+    }
+
+    @Test
+    public void testAddGuestToConferenceRoom(){
+        conferenceRoom.addGuestToConferenceRoom();
+
+        assertEquals(3, conferenceRoom.roomOccupied());
+    }
+
+    @Test
+    public void testRoomEmpty(){
+        assertEquals(2, diningRoom.roomOccupied());
+    }
+
+    @Test
+    public void testAddGuestToDiningRoom(){
+        diningRoom.addGuestToDiningRoom();
+        diningRoom.addGuestToDiningRoom();
+        diningRoom.addGuestToDiningRoom();
+        assertEquals(5, diningRoom.roomOccupied());
+    }
+@Test
+    public void testGetDiningRoomGuestList(){
+
+
+        //   String[] result;
+//  result =  diningRoom.getDiningRoomGuestList();
+//    System.out.println(result);
+}
+
+
 }

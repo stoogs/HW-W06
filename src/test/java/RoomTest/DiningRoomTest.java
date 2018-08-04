@@ -46,24 +46,6 @@ public class DiningRoomTest {
         assertEquals(2, diningRoom.roomOccupied());
     }
 
-
-//    @Test  //Add to dining.Room diningRoomGuestsArray array
-//    public void addGuestsToDiningRoomArray() {
-////       this.diningRoomGuestsArray.add(new Guest("Dave",200)); // Works
-////       this.diningRoomGuestsArray.add(guest1); //Works
-//        addGuestsToDiningRoomArray(Guest guest1);
-//        System.out.println(diningRoomGuestsArray.size());
-//        assertEquals(2, diningRoomGuestsArray.size());
-//    }
-
-//    @Test // Add 2, Remove 1 from dining room array
-//    public void removeGuestFromDiningRoomArray(){
-////        this.diningRoomGuestsArray.add(new Guest("Dave",200)); // Works
-//        addGuestToDiningRoom(guest1); //Works
-//        this.diningRoomGuestsArray.remove(guest1);
-//        assertEquals(1, diningRoomGuestsArray.size());
-//    }
-    //@Test
     //TODO check capacity of room not exceeded
 
 }
