@@ -38,7 +38,11 @@ public class ConferenceRoom extends Room{
     public void changeConferenceRoomTitle(String title){
         this.setConferenceRoomTitle(title);
     }
+    public void guestsInConferenceRoom(){
+        System.out.println("Conference Room Guests ");
+        System.out.println(Arrays.toString(this.conferenceRoomGuestsArray.toArray()));
 
+    }
 //    public ArrayList listGuestsInDiningRoom(){
 //        return conferenceRoomGuestsArray();
 //    }

@@ -7,10 +7,7 @@ import Room.ConferenceRoom;
 import Room.DiningRoom;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 
@@ -34,11 +31,6 @@ public class HotelTest {
         conferenceRoom = new ConferenceRoom("Conf Room",guests);
         conferenceRoom.addGuestToConferenceRoom();
         conferenceRoom.addGuestToConferenceRoom();
-
-        // put single guest in room array
-        // make guest array
-        // put guest in room array
-        // remove guest from room array
 
     }
 
@@ -125,13 +117,17 @@ public class HotelTest {
         assertEquals(5, diningRoom.roomOccupied());
     }
 @Test
-    public void testGetDiningRoomGuestList(){
+    public void testRoomsForGuests() {
+    diningRoom.guestsInDiningRoom();
+    conferenceRoom.guestsInConferenceRoom();
 
-
-        //   String[] result;
+    //System.out.println(Arrays.toString(guests.toArray()));
+    }
+}
+        //  String[] result;
 //  result =  diningRoom.getDiningRoomGuestList();
 //    System.out.println(result);
-}
 
 
-}
+
+

@@ -29,6 +29,13 @@ public void addGuestToDiningRoom(){
         this.diningRoomGuestsArray.remove(guest);
         //System.out.println(diningRoomGuestsArray);
     }
+public void guestsInDiningRoom(){
+    //System.out.println(Arrays.toString(this.diningRoomGuestsArray.toArray()));
+    System.out.println("Dining Room Guests ");
+    System.out.println(Arrays.toString(this.diningRoomGuestsArray.toArray()));
+}
+
+
 
 
 //    public String[] getDiningRoomGuestList() {
@@ -45,6 +52,5 @@ public void addGuestToDiningRoom(){
 //        }
 //        return namesarray[];
 //    }
-
 
 } // class end
