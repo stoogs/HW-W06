@@ -38,7 +38,7 @@ public abstract class Room {
 //    public void setGuests(ArrayList<Guest> guests) {
 //        this.guests = guests;
 //    }
-
+//
 //    public void addGuest(Guest guest){
 //        guests.add(guest);
 //    }

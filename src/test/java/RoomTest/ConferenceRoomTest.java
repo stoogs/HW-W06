@@ -29,8 +29,23 @@ public class ConferenceRoomTest {
         conferenceRoom.setConferenceRoomTitle("Expo Room");
         assertEquals("Expo Room", conferenceRoom.getConferenceRoomTitle());
     }
+    @Test
+    public void testRoomRate() {
+        conferenceRoom.getDailyRate();
+        assertEquals(500, conferenceRoom.getDailyRate());
+    }
 
-   // @Test
+    @Test
+    public void testSetRoomRate() {
+        conferenceRoom.setDailyRate(550);
+        assertEquals(550, conferenceRoom.getDailyRate());
+    }
+
+//    @Test
+//    public void testGuestsSize() {
+//
+//    }
+    // @Test
     //TODO put guests in array guests
 
    // @Test

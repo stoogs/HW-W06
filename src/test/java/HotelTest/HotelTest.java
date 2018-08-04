@@ -26,7 +26,7 @@ public class HotelTest {
         guest2 = new Guest("Cybil", 1000.00);
         hotel = new Hotel("Clanty Towers");
         diningRoom = new DiningRoom();
-        this.guests = new ArrayList<Guest>();
+//        this.guests = new ArrayList<Guest>();
         conferenceRoom = new ConferenceRoom("Conf Room",guests);
 
         // TODO make guest array
@@ -59,5 +59,7 @@ public class HotelTest {
         hotel.setName("Fawlty Towers");
         assertEquals("Fawlty Towers", hotel.getName());
     }
-
+    @Test  //Add to Hotel guests array
+    public void addGuestsToDiningRoomArray() {
+    }
 }
