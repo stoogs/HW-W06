@@ -23,6 +23,5 @@ public class Guest {
     public void setMoney(double money) {
         this.money = money;
     }
-//    public int getGuestArraySize(){
-//        return guests.size();
+
 } // end

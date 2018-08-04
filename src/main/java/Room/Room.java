@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public abstract class Room {
     private int dailyRate;
-     ArrayList<Guest> guests;
+    private ArrayList<Guest> guests;
     private int capacity;
 
     public Room(int dailyRate, ArrayList<Guest> guests, int capacity){

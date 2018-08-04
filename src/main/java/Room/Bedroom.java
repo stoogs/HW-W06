@@ -2,6 +2,6 @@ package Room;
 
 public class Bedroom {
 
-    //TODO add int Array[0] for single rooms.
+    //TODO Create Constructor etc....
 
 }

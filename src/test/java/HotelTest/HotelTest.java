@@ -2,19 +2,33 @@ package HotelTest;
 
 import Guest.Guest;
 import Hotel.Hotel;
+import Room.Bedroom;
+import Room.ConferenceRoom;
+import Room.DiningRoom;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
 
 public class HotelTest {
     Hotel hotel;
-    Guest guest;
+    Guest guest1, guest2;
+    ArrayList<Guest> guests;
+    DiningRoom diningRoom;
+    ConferenceRoom conferenceRoom;
+    Bedroom bedRoomSingle, bedRoomDouble,bedRoomKing;
 
     @Before
     public void before() {
-        guest = new Guest("Basil", 500.00);
+        guest1 = new Guest("Basil", 100.00);
+        guest2 = new Guest("Cybil", 1000.00);
         hotel = new Hotel("Clanty Towers");
+        diningRoom = new DiningRoom(100,guests, 10);
+        this.guests = new ArrayList<Guest>();
+        conferenceRoom = new ConferenceRoom(500,guests,50,"Conf Room");
+
         // TODO make guest array
         // TODO make room array
         // put single guest in room array
@@ -28,12 +42,12 @@ public class HotelTest {
 
     @Test
     public void guestHasName() {
-        assertEquals("Basil", guest.getName());
+        assertEquals("Basil", guest1.getName());
     }
 
     @Test
     public void guestHasMoney() {
-        assertEquals(500.00, guest.getMoney(), 0);
+        assertEquals(100.00, guest1.getMoney(), 0);
     }
 
     @Test
