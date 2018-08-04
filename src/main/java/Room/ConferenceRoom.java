@@ -46,6 +46,14 @@ public class ConferenceRoom extends Room{
     public void printConferenceRoomGuestNames(){
        conferenceRoomGuestsArray.forEach((person)->System.out.println(person.getName()));
     }
+    public boolean conferenceRoomEmptyTrue(){
+        conferenceRoomGuestsArray.clear();
+        return conferenceRoomGuestsArray.isEmpty();
+    }
+
+    public boolean conferenceRoomEmptyFalse(){
+      return conferenceRoomGuestsArray.isEmpty();
+    }
 //    public ArrayList listGuestsInDiningRoom(){
 //        return conferenceRoomGuestsArray();
 //    }

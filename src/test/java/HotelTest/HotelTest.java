@@ -2,7 +2,8 @@ package HotelTest;
 
 import Guest.Guest;
 import Hotel.Hotel;
-import Room.Bedroom;
+import Room.BedRoom;
+import Room.BedRoomType;
 import Room.ConferenceRoom;
 import Room.DiningRoom;
 import org.junit.Before;
@@ -17,8 +18,7 @@ public class HotelTest {
     ArrayList<Guest> guests;
     DiningRoom diningRoom;
     ConferenceRoom conferenceRoom;
-    Bedroom bedRoomSingle, bedRoomDouble,bedRoomKing;
-    ArrayList<Guest> guestsInRoom;
+    BedRoom bedRoom;
 
     @Before
     public void before() {
@@ -31,9 +31,14 @@ public class HotelTest {
         conferenceRoom = new ConferenceRoom("Conf Room",guests);
         conferenceRoom.addGuestToConferenceRoom();
         conferenceRoom.addGuestToConferenceRoom();
-
+        bedRoom = new BedRoom(BedRoomType.SINGLE);
     }
+    @Test
+    public void bedRoomSingleGetPrice(){
+        System.out.println(bedRoom.getType());
 
+       // assertEquals(BedRoomType.SINGLE, bedRoomSingle.getName());
+    }
     @Test
     public void testChangeConferenceRoomTitle(){
         conferenceRoom.changeConferenceRoomTitle("Flat Earthers");
@@ -120,6 +125,20 @@ public class HotelTest {
     public void testPrintConferenceRoomGuestNames() {
     conferenceRoom.printConferenceRoomGuestNames();
     }
+
+    @Test
+    public void testConferenceRoomEmptyTrue(){
+        boolean result = conferenceRoom.conferenceRoomEmptyTrue();
+        System.out.println(result);
+        assertEquals(true,result);
+    }
+@Test
+    public void testConferenceRoomEmptyFalse(){
+        boolean result = conferenceRoom.conferenceRoomEmptyFalse();
+        System.out.println(result);
+        assertEquals(false,result);
+    }
+
 
 }
 

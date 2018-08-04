@@ -21,6 +21,7 @@ public int roomOccupied(){
 
 public void addGuestToDiningRoom(){
         guest = new Guest("Tester",200);
+
         this.diningRoomGuestsArray.add(guest);
     //System.out.println(Arrays.asList(diningRoomGuestsArray));
 }

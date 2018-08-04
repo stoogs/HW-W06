@@ -15,6 +15,5 @@ public class Hotel {
         this.name = name;
     }
 
-    //TODO Function checkRoomsAvailable
 
 } // class end
