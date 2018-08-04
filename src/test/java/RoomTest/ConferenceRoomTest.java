@@ -41,10 +41,19 @@ public class ConferenceRoomTest {
         assertEquals(550, conferenceRoom.getDailyRate());
     }
 
-//    @Test
-//    public void testGuestsSize() {
-//
-//    }
+    @Test
+    public void testAddGuestToConferenceRoom(){
+        conferenceRoom.addGuestToConferenceRoom();
+        assertEquals(1, conferenceRoom.roomOccupied());
+    }
+
+    @Test
+    public void testRemoveGuestFromDiningRoom(){
+        conferenceRoom.addGuestToConferenceRoom();
+        conferenceRoom.addGuestToConferenceRoom();
+        conferenceRoom.removeGuestFromConferenceRoom();
+        assertEquals(1, conferenceRoom.roomOccupied());
+    }
     // @Test
     //TODO put guests in array guests
 

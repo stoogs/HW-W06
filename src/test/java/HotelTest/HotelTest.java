@@ -26,15 +26,10 @@ public class HotelTest {
         guest2 = new Guest("Cybil", 1000.00);
         hotel = new Hotel("Clanty Towers");
         diningRoom = new DiningRoom();
-//        this.guests = new ArrayList<Guest>();
         conferenceRoom = new ConferenceRoom("Conf Room",guests);
 
-        // TODO make guest array
-        // TODO make room array
         // put single guest in room array
         // make guest array
-        // check in guest
-        // check out guest
         // put guest in room array
         // remove guest from room array
 
@@ -59,7 +54,16 @@ public class HotelTest {
         hotel.setName("Fawlty Towers");
         assertEquals("Fawlty Towers", hotel.getName());
     }
-    @Test  //Add to Hotel guests array
-    public void addGuestsToDiningRoomArray() {
+    @Test  //Add to DiningRoom guests array
+    public void addGuestsToDiningRoom() {
+        diningRoom.addGuestToDiningRoom();
+        assertEquals(1, diningRoom.roomOccupied());
+    }
+    @Test //Add to Dining Room guests array
+    public void testRemoveGuestFromDiningRoom(){
+        diningRoom.addGuestToDiningRoom();
+        diningRoom.addGuestToDiningRoom();
+        diningRoom.removeGuestFromDiningRoom();
+        assertEquals(1, diningRoom.roomOccupied());
     }
 }

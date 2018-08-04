@@ -12,12 +12,10 @@ import static org.junit.Assert.assertEquals;
 public class DiningRoomTest {
      Guest guest1;
      DiningRoom diningRoom;
-     ArrayList<Guest> diningRoomGuestsArray;
 
     @Before
     public void before() {
         guest1 = new Guest("Basil", 500.00);
-      //  this.diningRoomGuestsArray = new ArrayList<Guest>();
         diningRoom = new DiningRoom();
     }
 

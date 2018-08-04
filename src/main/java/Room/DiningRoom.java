@@ -14,7 +14,6 @@ public class DiningRoom extends Room {
         this.diningRoomGuestsArray = new ArrayList<Guest>();
     }
 
-
 public int roomOccupied(){
         return this.diningRoomGuestsArray.size();
 }
