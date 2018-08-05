@@ -139,6 +139,34 @@ public class HotelTest {
         assertEquals(false,result);
     }
 
+    @Test
+    public void addGuestToHotel(){
+      int result = hotel.addGuestToHotel(guest1);
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void addGuestToHotelGetBackGuest(){
+        Guest result = hotel.addGuestToHotelGetBackGuest(guest1);
+        assertEquals(guest1, result);
+
+    }
+@Test
+    public void testReturnGuestNameStringArray(){
+        hotel.addGuestToHotel(guest1);
+        hotel.addGuestToHotel(guest2);
+        System.out.println(hotel.returnGuestNameStringArray());
+    }
+
+    @Test
+    public void testReturnGuestNameObjectArray(){
+        hotel.addGuestToHotel(guest1);
+        hotel.addGuestToHotel(guest2);
+        hotel.addGuestToHotel(guest2);
+        ArrayList<Guest> results;
+        results = hotel.returnGuestNameObjectArray();
+        System.out.println(results);
+    }
 
 }
 

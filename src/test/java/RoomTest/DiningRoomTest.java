@@ -45,7 +45,11 @@ public class DiningRoomTest {
         diningRoom.removeGuestFromDiningRoom();
         assertEquals(2, diningRoom.roomOccupied());
     }
+    @Test
+    public void testGetAnotherCapacity(){
+        diningRoom.getAnotherCapacity();
 
+    }
     //TODO check capacity of room not exceeded
 
 }

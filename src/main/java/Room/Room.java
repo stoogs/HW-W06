@@ -30,7 +30,11 @@ public abstract class Room {
     public void setDailyRate(int dailyRate) {
         this.dailyRate = dailyRate;
     }
+    public int getAnotherCapacity() {
 
+        System.out.println(capacity*5);
+        return 10;
+    }
 //    public ArrayList<Guest> getGuests() {
 //        return guests;
 //    }
