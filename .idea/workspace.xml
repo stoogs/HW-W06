@@ -4,14 +4,7 @@
     <list default="true" id="4f0d11f3-2056-4084-a307-e95fc9029adc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Hotel/Hotel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Hotel/Hotel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Room/DiningRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Room/DiningRoom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Room/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Room/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/HotelTest/HotelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/HotelTest/HotelTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/RoomTest/DiningRoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/RoomTest/DiningRoomTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Room/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Room/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest/DiningRoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest/DiningRoomTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -61,10 +54,11 @@
     <session id="-1869648451">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -82,12 +76,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="11498" />
+          <entry key="java" value="11502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11498" />
+          <entry key="JAVA" value="11502" />
           <entry key="PLAIN_TEXT" value="4" />
         </counts>
       </usages-collector>
@@ -136,8 +130,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="356">
-                  <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+                <state relative-caret-position="185">
+                  <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -164,8 +158,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+                <state relative-caret-position="-824">
+                  <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="38" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -510,8 +504,8 @@
         <option value="$PROJECT_DIR$/src/test/java/RoomTest/DiningRoomTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room/Room.java" />
         <option value="$PROJECT_DIR$/src/main/java/Room/DiningRoom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
         <option value="$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
       </list>
     </option>
   </component>
@@ -521,7 +515,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="2435" />
     <option name="height" value="1058" />
@@ -535,6 +529,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -631,13 +626,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533459638099" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533539675251" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -653,7 +647,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HotelTest.testReturnGuestNameObjectArray">
+  <component name="RunManager" selected="JUnit.HotelTest.testReturnGuestNameStringArray">
     <configuration name="HotelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Towers_test" />
       <extension name="coverage">
@@ -741,8 +735,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HotelTest.testReturnGuestNameObjectArray" />
         <item itemvalue="JUnit.HotelTest.testReturnGuestNameStringArray" />
+        <item itemvalue="JUnit.HotelTest.testReturnGuestNameObjectArray" />
         <item itemvalue="JUnit.HotelTest.addGuestToHotelGetBackGuest" />
         <item itemvalue="JUnit.HotelTest.addGuestToHotel" />
         <item itemvalue="JUnit.HotelTest" />
@@ -764,14 +758,12 @@
       <workItem from="1533301519028" duration="39054000" />
       <workItem from="1533408345378" duration="7357000" />
       <workItem from="1533451284291" duration="1920000" />
-      <workItem from="1533454478641" duration="3619000" />
+      <workItem from="1533454478641" duration="3829000" />
+      <workItem from="1533539190467" duration="773000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HotelTest_testReturnGuestNameObjects - 2018.08.05 at 09h 46m 34s.xml">
-      <configuration name="HotelTest.testReturnGuestNameObjects" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HotelTest_testReturnGuestNameObjects - 2018.08.05 at 09h 47m 00s.xml">
       <configuration name="HotelTest.testReturnGuestNameObjects" configurationId="JUnit" />
     </history-entry>
@@ -799,9 +791,12 @@
     <history-entry file="HotelTest_testReturnGuestNameObjectArray - 2018.08.05 at 10h 00m 40s.xml">
       <configuration name="HotelTest.testReturnGuestNameObjectArray" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HotelTest_testReturnGuestNameStringArray - 2018.08.06 at 08h 14m 38s.xml">
+      <configuration name="HotelTest.testReturnGuestNameStringArray" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53064000" />
+    <option name="totallyTimeSpent" value="54047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -813,10 +808,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2435" height="1058" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08483075" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08583691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -825,17 +820,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32665965" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.17702845" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3420026" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3846154" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899868" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.18545838" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.1846554" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.3394018" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32665965" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32639793" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.20801233" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -966,6 +961,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Room/ConferenceRoom.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1006,16 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#1657#1658#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Guest/Guest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1023,20 +1015,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="46" column="58" selection-start-line="46" selection-start-column="58" selection-end-line="46" selection-end-column="58" />
+        <state relative-caret-position="185">
+          <caret line="158" column="5" lean-forward="true" selection-start-line="158" selection-start-column="5" selection-end-line="158" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/HotelTest/HotelTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
+        <state relative-caret-position="-824">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
